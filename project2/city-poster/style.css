@@ -1,0 +1,119 @@
+:root{
+    --mint: #3CE8BB;     
+    --maroon: #751200;   
+    --bg: #0b0b0c;
+  }
+  
+  
+  *{ box-sizing: border-box; }
+  html, body{ height: 100%; }
+  body{
+    margin: 0;
+    background: var(--bg);
+    font-family: "Bakbak One", system-ui, sans-serif;
+  }
+  
+  
+  .poster{
+    min-height: 100vh;
+    display: grid;
+    place-items: stretch;
+    padding: 20px;
+    background: var(--bg);
+  }
+  
+  
+  .poster::before{
+    content:"";
+    display:block;
+  
+    
+    width: min(720px, 100%);
+    aspect-ratio: 900 / 1600; 
+    margin: 0 auto;
+  
+    border-radius: 18px;
+    overflow: hidden;
+    background-image: url("images/wuhan-poster.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+    
+    position: relative;
+    box-shadow: 0 18px 60px rgba(0,0,0,.45);
+  }
+  
+  .poster{
+    position: relative;
+  }
+  
+  .poster > .top,
+  .poster > .bottom{
+    width: min(720px, 100%);
+    aspect-ratio: 900 / 1600;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none; 
+  }
+  
+  .top{
+    top: 20px; 
+    padding: 42px 42px 0 42px;
+  }
+  
+  
+  .title{
+    margin: 0;
+    color: var(--mint);
+    font-size: clamp(56px, 8vw, 92px);
+    line-height: 0.95;
+    letter-spacing: 0.02em;
+  }
+  
+ 
+.subline{
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px; 
+  }
+  
+  .tagline{
+    margin: 0;
+    color: var(--maroon);
+    font-size: 14px;
+    letter-spacing: 0.06em;
+  }
+  
+  .rule{
+    width: 86%;       
+    height: 4px;
+    background: var(--mint);
+    border-radius: 999px;
+    opacity: 1;
+  }
+  
+  
+  
+  .bottom{
+    top: 20px; 
+    padding: 0 42px 42px 42px;
+    display: grid;
+    align-items: end;
+  }
+  
+  .motto{
+    margin: 0;
+    color: var(--mint);
+    font-size: 16px;
+    letter-spacing: 0.08em;
+    line-height: 1.2;
+    text-align: center;
+  
+    transform: translateY(-34px);
+  }
+  
