@@ -1,0 +1,396 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4efe8;
+    color: #4b352d;
+  }
+  
+  img {
+    display: block;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .landing-page {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+  }
+  
+  .hero-card {
+    text-align: center;
+    max-width: 700px;
+  }
+  
+  .main-title {
+    font-size: 72px;
+    margin: 0;
+    font-weight: 900;
+  }
+  
+  .subtitle {
+    font-size: 24px;
+    margin-top: 16px;
+    color: #82695d;
+  }
+  
+  .description {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #8f776a;
+    max-width: 560px;
+    margin: 20px auto 40px;
+  }
+  
+  .main-button {
+    display: inline-block;
+    background: #dc8a49;
+    color: white;
+    padding: 18px 38px;
+    border-radius: 999px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  }
+  
+  .main-button:hover {
+    opacity: 0.92;
+  }
+  
+  .floating-pets {
+    position: absolute;
+    top: 30px;
+    width: 500px;
+    height: 200px;
+  }
+  
+  .floating-pet {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    border: 5px solid #fff8f3;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+  }
+  
+  #landingPet1 {
+    top: 0;
+    left: 180px;
+  }
+  
+  #landingPet2 {
+    top: 70px;
+    left: 60px;
+  }
+  
+  #landingPet3 {
+    top: 80px;
+    right: 60px;
+  }
+  
+  .page-wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 50px 20px 80px;
+  }
+  
+  .section-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .page-title {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 900;
+  }
+  
+  .page-subtitle {
+    margin-top: 12px;
+    color: #8f776a;
+    font-size: 16px;
+  }
+  
+  .slider-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  
+  .slider-card,
+  .toggle-card,
+  .pet-card,
+  .game-card,
+  .summary-card {
+    background: #fbf8f5;
+    border-radius: 28px;
+    padding: 24px 26px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  }
+  
+  .slider-top {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 12px;
+  }
+  
+  .slider-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #8f776a;
+    margin-bottom: 10px;
+  }
+  
+  input[type="range"] {
+    width: 100%;
+    accent-color: #dc8a49;
+  }
+  
+  .toggle-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    font-size: 16px;
+  }
+  
+  .match-preview {
+    text-align: center;
+    margin-top: 36px;
+  }
+  
+  .pet-card {
+    max-width: 480px;
+    margin: 0 auto 28px;
+    text-align: center;
+  }
+  
+  .pet-photo-large {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 18px;
+    border: 6px solid #fff;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+  }
+  
+  .pet-name {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 900;
+  }
+  
+  .pet-type {
+    margin: 8px 0 14px;
+    color: #8f776a;
+    font-size: 18px;
+  }
+  
+  .match-badge {
+    display: inline-block;
+    background: #f3e7dc;
+    color: #dc8a49;
+    border-radius: 999px;
+    padding: 12px 20px;
+    font-weight: bold;
+    margin-bottom: 18px;
+  }
+  
+  .pet-description {
+    color: #8f776a;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+  
+  .progress-info {
+    margin-bottom: 28px;
+  }
+  
+  .progress-labels {
+    display: flex;
+    justify-content: space-between;
+    color: #8f776a;
+    margin-bottom: 12px;
+    font-size: 16px;
+  }
+  
+  .progress-bar {
+    width: 100%;
+    height: 10px;
+    background: #ece4dc;
+    border-radius: 999px;
+    overflow: hidden;
+  }
+  
+  .progress-fill {
+    height: 100%;
+    width: 16%;
+    background: #dc8a49;
+    border-radius: 999px;
+  }
+  
+  .game-card {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  
+  .scene-text {
+    color: #8f776a;
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 420px;
+    margin: 18px auto 0;
+  }
+  
+  .actions-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 28px;
+  }
+  
+  .action-btn {
+    background: #fbf8f5;
+    border: none;
+    border-radius: 24px;
+    padding: 30px 20px;
+    font-size: 16px;
+    color: #4b352d;
+    cursor: pointer;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.04);
+  }
+  
+  .action-btn:hover {
+    outline: 2px solid #f0c6a2;
+  }
+  
+  .mood-section h3,
+  .summary-card h3 {
+    margin-top: 0;
+    margin-bottom: 18px;
+    font-size: 24px;
+  }
+  
+  .mood-map {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  
+  .mood-tile {
+    width: 72px;
+    height: 72px;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+  }
+  
+  .large-map .mood-tile {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .result-card {
+    margin-bottom: 24px;
+  }
+  
+  .result-score-box {
+    width: 160px;
+    margin: 14px auto 20px;
+    background: #f3e7dc;
+    border-radius: 24px;
+    padding: 16px;
+    text-align: center;
+    color: #8f776a;
+  }
+  
+  .result-score-box strong {
+    display: block;
+    font-size: 46px;
+    color: #dc8a49;
+    margin-top: 6px;
+  }
+  
+  .mood-tags {
+    margin-top: 18px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  
+  .mood-tag {
+    background: #f3e7dc;
+    color: #6a574d;
+    padding: 10px 16px;
+    border-radius: 999px;
+    font-size: 15px;
+  }
+  
+  #careList p {
+    margin: 14px 0;
+    font-size: 18px;
+    color: #6c564b;
+  }
+  
+  #summaryText {
+    color: #8f776a;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  .celebration {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .main-title {
+      font-size: 48px;
+    }
+  
+    .page-title {
+      font-size: 36px;
+    }
+  
+    .floating-pets {
+      width: 100%;
+      height: 150px;
+    }
+  
+    #landingPet1 {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  
+    #landingPet2 {
+      left: 15%;
+    }
+  
+    #landingPet3 {
+      right: 15%;
+    }
+  
+    .actions-grid {
+      grid-template-columns: 1fr;
+    }
+  }

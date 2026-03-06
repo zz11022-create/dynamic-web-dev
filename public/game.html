@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pet Care Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="game">
+  <main class="page-wrap game-page">
+    <section class="progress-info">
+      <div class="progress-labels">
+        <span id="roundText">Round 1 of 6</span>
+        <span id="sceneTitle">First Meeting</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+    </section>
+
+    <section class="game-card">
+      <img id="gamePetPhoto" class="pet-photo-large api-pet-photo" alt="game pet" />
+      <h2 class="pet-name">Whiskers</h2>
+      <p class="scene-text" id="sceneText">
+        Whiskers peeks at you from behind the door, curious but cautious...
+      </p>
+    </section>
+
+    <section class="actions-grid" id="actionsGrid">
+      
+    </section>
+
+    <section class="mood-section">
+      <h3>Mood Map</h3>
+      <div class="mood-map" id="moodMap"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

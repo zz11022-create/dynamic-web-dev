@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Session Result</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="result">
+  <main class="page-wrap result-page">
+    <section class="section-header">
+      <div class="celebration">🎉</div>
+      <h1 class="page-title">Session Complete!</h1>
+      <p class="page-subtitle">Here’s how your time with your matched cat went</p>
+    </section>
+
+    <section class="pet-card result-card">
+      <img id="resultPetPhoto" class="pet-photo-large api-pet-photo" alt="result pet" />
+      <h2 class="pet-name">Whiskers</h2>
+      <p class="pet-type">Cat</p>
+      <div class="result-score-box">
+        <span>Compatibility</span>
+        <strong id="finalScore">79%</strong>
+      </div>
+      <p class="pet-description">
+        A sophisticated feline who appreciates quiet afternoons and window-watching.
+      </p>
+    </section>
+
+    <section class="summary-card">
+      <h3>Your Mood Map</h3>
+      <div class="mood-map large-map" id="resultMoodMap"></div>
+      <div class="mood-tags" id="moodTags"></div>
+    </section>
+
+    <section class="summary-card">
+      <h3>Care Summary</h3>
+      <p id="summaryText"></p>
+      <div id="careList"></div>
+    </section>
+
+    <a href="index.html" class="main-button">🐾 Play Again</a>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

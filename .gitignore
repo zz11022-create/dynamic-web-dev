@@ -1,0 +1,5 @@
+node_modules
+sessions.db
+.pm2
+.DS_Store
+Thumbs.db

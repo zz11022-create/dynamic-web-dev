@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Match Your Pet</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="match">
+  <main class="page-wrap">
+    <section class="section-header">
+      <h1 class="page-title">Your Lifestyle</h1>
+      <p class="page-subtitle">Adjust your preferences to discover the best pet match</p>
+    </section>
+
+    <section class="slider-panel">
+      <div class="slider-card">
+        <div class="slider-top">
+          <span>⚡ Energy Tolerance</span>
+          <span id="energyValue">3/5</span>
+        </div>
+        <div class="slider-labels">
+          <span>Chill</span>
+          <span>Hyper</span>
+        </div>
+        <input type="range" min="1" max="5" value="3" id="energy" />
+      </div>
+
+      <div class="slider-card">
+        <div class="slider-top">
+          <span>🔊 Noise Tolerance</span>
+          <span id="noiseValue">3/5</span>
+        </div>
+        <div class="slider-labels">
+          <span>Quiet</span>
+          <span>Loud</span>
+        </div>
+        <input type="range" min="1" max="5" value="3" id="noise" />
+      </div>
+
+      <div class="slider-card">
+        <div class="slider-top">
+          <span>👥 Social Preference</span>
+          <span id="socialValue">3/5</span>
+        </div>
+        <div class="slider-labels">
+          <span>Solo</span>
+          <span>Social</span>
+        </div>
+        <input type="range" min="1" max="5" value="3" id="social" />
+      </div>
+
+      <div class="slider-card">
+        <div class="slider-top">
+          <span>🤗 Cuddle Factor</span>
+          <span id="cuddleValue">3/5</span>
+        </div>
+        <div class="slider-labels">
+          <span>Independent</span>
+          <span>Snuggly</span>
+        </div>
+        <input type="range" min="1" max="5" value="3" id="cuddle" />
+      </div>
+
+      <div class="toggle-card">
+        <div class="toggle-row">
+          <span>🏠 Apartment friendly</span>
+          <input type="checkbox" id="apartment" />
+        </div>
+        <div class="toggle-row">
+          <span>🐣 First time pet owner</span>
+          <input type="checkbox" id="firstTime" />
+        </div>
+        <div class="toggle-row">
+          <span>💻 Works from home</span>
+          <input type="checkbox" id="home" />
+        </div>
+      </div>
+    </section>
+
+    <section class="match-preview">
+      <div class="pet-card">
+        <img id="matchPetPhoto" class="pet-photo-large api-pet-photo" alt="matched pet" />
+        <h2 class="pet-name">Whiskers</h2>
+        <p class="pet-type">Cat</p>
+        <div class="match-badge" id="matchScore">79% match</div>
+        <p class="pet-description">
+          A sophisticated feline who appreciates quiet afternoons and window-watching.
+        </p>
+      </div>
+
+      <button type="button" class="main-button" id="meetBtn">Meet Your Match 🎉</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
